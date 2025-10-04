@@ -1,7 +1,6 @@
 import streamlit as st
 st.write("""
-         # Selamat Datang di Project kedua 
-         Penghitung Bunga Tunggal
+         # Aplikasi Penghitung Bunga Tunggal
          """);
 # variable
 uang = st.number_input("Masukkan sejumlah Uang", 0)
