@@ -14,8 +14,3 @@ if(btn):
 
     st.success(f"hasil bunga tunggal dalam {tahun} adalah Rp {total_formatted}")
     st.balloons();
-
-
-# halaman_lain = st.button("Hitung luas segitiga ?")
-# if(halaman_lain):
-#     st.session_state["halaman"] = "segitiga"
