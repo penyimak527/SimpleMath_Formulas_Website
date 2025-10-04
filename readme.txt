@@ -1,23 +1,21 @@
 # Simple Math Formulas Website ✨
 
-Website interaktif berbasis Streamlit untuk menghitung rumus-rumus matematika sederhana seperti luas dan keliling segitiga, dengan potensi pengembangan untuk rumus lain. Repository ini berisi kode Python untuk aplikasi web. **Penggunaan proyek ini memerlukan izin terlebih dahulu dari pencipta**. 📝
+Website interaktif berbasis Streamlit untuk menghitung rumus-rumus matematika sederhana seperti luas dan keliling segitiga, serta rumus lainnya. Repository ini berisi kode Python untuk aplikasi web. **Penggunaan proyek ini memerlukan izin terlebih dahulu dari pencipta**. 📝
 
 ---
 
 ## Fitur 📋
 
-- ✅ Hitung luas segitiga
-- ✅ Hitung keliling segitiga
-- ✅ Tampilan interaktif dengan input pengguna
-- ⏳ (Fitur tambahan seperti luas persegi, lingkaran, dll. akan dikembangkan)
+- ✅ Hitung luas dan keliling segitiga (`segita.py`)
+- ✅ Hitung luas lingkaran tahunan (`bungatunggal`)
+- ⏳ (Fitur tambahan akan dikembangkan)
 
 ---
 
 ## Prasyarat 🛠️
 
 - Python 3.7 atau lebih baru
-- [Streamlit](https://streamlit.io/) (`pip install streamlit`)
-- [NumPy](https://numpy.org/) (`pip install numpy`) untuk perhitungan numerik
+- Streamlit (`pip install streamlit`)
 - Web browser (Chrome, Firefox, dll.)
 
 ---
@@ -47,10 +45,10 @@ pip install -r requirements.txt
 - Jalankan Streamlit:
 
 ```bash
-streamlit run app.py
+streamlit run streamlit
 ```
 
-- Buka [http://localhost:8501](http://localhost:8501) di browser.
+- Buka http://localhost:8501 di browser.
 
 ---
 
@@ -58,11 +56,15 @@ streamlit run app.py
 
 ```
 simple-math-formulas/
-├── app.py              # File utama Streamlit untuk aplikasi
-├── requirements.txt    # Daftar dependensi Python
-├── data/               # (Opsional) Direktori untuk data tambahan
-├── utils/              # (Opsional) Fungsi bantu untuk perhitungan
-├── README.md           # Panduan ini
+├── streamlit            # File utama untuk menjalankan aplikasi
+├── config.toml          # Konfigurasi Streamlit
+├── pages/               # Halaman tambahan untuk rumus
+│   ├── bunga_tunggal  # Hitung luas bunga tunggal
+│   ├── segita.py        # Hitung luas dan keliling segitiga
+├── dashboard.py         # (Opsional) Dashboard utama
+├── Profilefile          # (Opsional) File profil atau info tambahan
+├── requirements.txt     # Daftar dependensi Python
+├── README.md            # Panduan ini
 ```
 
 ---
@@ -70,22 +72,21 @@ simple-math-formulas/
 ## Cara Penggunaan 🖱️
 
 1. **Buka Website**: Jalankan aplikasi dan akses di browser.
-2. **Masukkan Data**: Isi nilai seperti panjang sisi segitiga di form yang disediakan.
-3. **Hitung**: Klik tombol "Hitung" untuk melihat hasil luas atau keliling.
-4. **Eksplorasi**: Tambahkan input baru untuk mengembangkan rumus lain.
+2. **Pilih Rumus**: Navigasi ke halaman seperti `segita`, `bungatunggaltahunan`.
+3. **Masukkan Data**: Isi nilai seperti panjang sisi atau jari-jari.
+4. **Hitung**: Klik tombol "Hitung" untuk melihat hasil.
 
 ---
 
 ## Pengembangan Tambahan 🌱
 
-Proyek ini dirancang untuk dikembangkan lebih lanjut. Berikut ide dan langkah untuk menambahkan fitur:
+Proyek ini dapat dikembangkan lebih lanjut. Ide:
 
-- **Rumus Baru**: Tambahkan perhitungan seperti luas persegi (`luas = sisi * sisi`) atau luas lingkaran (`luas = π * r²`).
-- **Visualisasi**: Gunakan library seperti `matplotlib` untuk menampilkan grafik.
-- **Input Validasi**: Tambahkan pengecekan input untuk memastikan nilai positif.
-- Edit `app.py` untuk menambahkan fungsi baru, lalu perbarui `requirements.txt` jika ada dependensi baru.
+- Tambahkan rumus baru (misalnya luas persegi) di file baru di folder `pages/`.
+- Tingkatkan UI dengan tema kustom di `config.toml`.
+- Tambahkan validasi input di setiap halaman.
 
-Contoh tambahan di `app.py`:
+Contoh tambahan di `pages/persegi.py`:
 
 ```python
 import streamlit as st
@@ -102,8 +103,6 @@ st.write(f"Luas persegi: {luas}")
 
 - **Frontend**: Streamlit
 - **Backend**: Python
-- **Perhitungan**: NumPy (opsional)
-- **Visualisasi**: (Opsional, tambahkan matplotlib jika diperlukan)
 
 ---
 
@@ -136,7 +135,5 @@ git push origin fitur-baru
 
 ## Lisensi 📜
 
-[MIT License](LICENSE)  
+MIT License\
 **Harus izin terlebih dahulu jika ingin menggunakan untuk publik.**
-
----
