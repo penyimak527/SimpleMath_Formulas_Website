@@ -12,7 +12,7 @@ Website interaktif berbasis Streamlit untuk menghitung rumus-rumus matematika se
 
 ---
 
-## Prasyarat 🛠️
+## Persyarat 🛠️
 
 - Python 3.7 atau lebih baru
 - Streamlit (`pip install streamlit`)
@@ -137,3 +137,4 @@ git push origin fitur-baru
 
 MIT License\
 **Harus izin terlebih dahulu jika ingin menggunakan untuk publik.**
+
