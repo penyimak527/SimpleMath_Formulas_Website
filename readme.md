@@ -25,7 +25,7 @@ Website interaktif berbasis Streamlit untuk menghitung rumus-rumus matematika se
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/username/simple-math-formulas.git
+https://github.com/penyimak527/SimpleMath_Formulas_Website.git
 ```
 
 ### 2. Masuk ke Direktori
@@ -59,8 +59,6 @@ simple-math-formulas/
 ├── streamlit            # File utama untuk menjalankan aplikasi
 ├── config.toml          # Konfigurasi Streamlit
 ├── pages/               # Halaman tambahan untuk rumus
-│   ├── bunga_tunggal  # Hitung luas bunga tunggal
-│   ├── segita.py        # Hitung luas dan keliling segitiga
 ├── dashboard.py         # (Opsional) Dashboard utama
 ├── Profilefile          # (Opsional) File profil atau info tambahan
 ├── requirements.txt     # Daftar dependensi Python
@@ -106,35 +104,9 @@ st.write(f"Luas persegi: {luas}")
 
 ---
 
-## Kontribusi 🤝
-
-Penggunaan untuk tujuan pribadi atau publik membutuhkan izin dari pencipta. Untuk kontribusi:
-
-1. Fork repository.
-2. Buat branch:
-
-```bash
-git checkout -b fitur-baru
-```
-
-3. Commit perubahan:
-
-```bash
-git commit -m "Tambah fitur baru"
-```
-
-4. Push branch:
-
-```bash
-git push origin fitur-baru
-```
-
-5. Buat Pull Request setelah mendapatkan izin.
-
----
-
 ## Lisensi 📜
 
 MIT License\
 **Harus izin terlebih dahulu jika ingin menggunakan untuk publik.**
+
 
